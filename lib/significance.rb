@@ -15,7 +15,7 @@ module Significance
     1.5056327351493116e-7
   ]
 
-  def gamma(z)
+  def self.gamma(z)
     g = 7 
 
     if z.real < 0.5 
@@ -35,13 +35,13 @@ module Significance
     end 
   end 
 
-  def factorial(z)
+  def self.factorial(z)
     return nil if z < 0 
 
     gamma(z + 1)
   end 
 
-  def calculate(a, b, k, n)
+  def self.calculate(a, b, k, n)
     l = a.to_f * b / n 
 
     return nil if (k + 1.0) / l <= 2.5 

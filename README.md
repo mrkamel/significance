@@ -4,7 +4,7 @@
 Calculate significance of cooccurring words
 
 <pre>
-  Significance.calcluate(a, b, k, n)
+  Significance.calculate(a, b, k, n)
 </pre>
 
 where a is equal to the frequency of the first word in the set of documents,

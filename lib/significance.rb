@@ -31,7 +31,7 @@ module Significance
 
       t = z + g + 0.5 
 
-      sqrt(2 * Math::PI) * t ** (z + 0.5) * exp(-t) * x 
+      Math.sqrt(2 * Math::PI) * t ** (z + 0.5) * exp(-t) * x 
     end 
   end 
 

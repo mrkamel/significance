@@ -19,7 +19,7 @@ module Significance
     g = 7 
 
     if z.real < 0.5 
-      Math.PI / (sin(Math.PI * z) * gamma(1 - z)) 
+      Math::PI / (sin(Math::PI * z) * gamma(1 - z)) 
     else
       z -= 1
 
@@ -31,7 +31,7 @@ module Significance
 
       t = z + g + 0.5 
 
-      sqrt(2 * Math.PI) * t ** (z + 0.5) * exp(-t) * x 
+      sqrt(2 * Math::PI) * t ** (z + 0.5) * exp(-t) * x 
     end 
   end 
 

@@ -44,6 +44,7 @@ module Significance
   def self.calculate(a, b, k, n)
     l = a.to_f * b / n 
 
+    return nil if k.zero?
     return nil if (k + 1.0) / l <= 2.5 
 
     if k <= 10
